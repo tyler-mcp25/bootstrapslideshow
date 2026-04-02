@@ -1,4 +1,44 @@
-.fakeimg {
-    height: 200px;
-    background: #eee;
+.header {
+  display: flex;
+  gap: 20px;
+}
+
+.carousel {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(136, 213, 244);
+}
+
+.carousel-inner {
+  max-width: 800px;
+}
+
+.footer p {
+  margin: 0;
+  padding: 1em;
+}
+
+@media (max-width: 800px) {
+  .page-content {
+    height: 90vh;
   }
+
+  .carousel-inner {
+    max-width: 90%;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    padding-top: 5vh;
+  }
+
+  .carousel {
+    justify-content: center;
+    align-items: center;
+  }
+}
